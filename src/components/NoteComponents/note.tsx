@@ -1,9 +1,9 @@
 import DeleteForeverOutlinedIcon from "@mui/icons-material/DeleteForeverOutlined";
 
 interface NoteProps {
-  id: number;
+  id: string;
   text: string;
-  deleteNote: (id: number) => void;
+  deleteNote: (id: string) => void;
 }
 
 function Note({ id, text, deleteNote }: NoteProps): JSX.Element { 

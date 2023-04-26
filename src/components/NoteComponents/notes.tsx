@@ -12,7 +12,7 @@ function Notes(): JSX.Element {
   const [notes, setNotes] = useState<Note[]>([]);
   const [inputText, setInputText] = useState<string>("");
 
-  const textHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const textHandler = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInputText(e.target.value);
   };
 
